@@ -1,17 +1,17 @@
-#include <stdio.h> //biblioteca de comunicação com o usuário
-#include <stdlib.h> //biblioteca de alocação de espaçoem memória
-#include <locale.h> //biblioteca de alocações de texto por região
-#include  <string.h>// biblioteca respomsável por cuida das string
+#include <stdio.h> //biblioteca de comunicaÃ§Ã£o com o usuÃ¡rio
+#include <stdlib.h> //biblioteca de alocaÃ§Ã£o de espaÃ§oem memÃ³ria
+#include <locale.h> //biblioteca de alocaÃ§Ãµes de texto por regiÃ£o
+#include  <string.h>// biblioteca respomsÃ¡vel por cuida das string
 
 int Registro() // area de cadastro pessoa do aluno.
 {
-// inicio da criação de variáveis/string
+// inicio da criaÃ§Ã£o de variÃ¡veis/string
    char arquivo[40];
    char cpf[40];
    char nome[40];
    char sobrenome[40];
    char cargo[40];
-   // final da criação de variáveis/string
+   // final da criaÃ§Ã£o de variÃ¡veis/string
    
    // coletando cpf e nome etc..
    printf(":---------------------------------:\n");
@@ -92,14 +92,14 @@ int Comsultar() // area de pesquisa de nomes
    if(file == NULL)
    {
    	printf(":---------------------------------:\n");
-   	printf("cpf não localizado.               :\n");
+   	printf("cpf nÃ£o localizado.               :\n");
    	printf(":---------------------------------:\n");
    }
    
    
    while(fgets(conteudo,200, file) !=NULL)
    {
-   printf("\nessas são as informaçãoes do usuário:");
+   printf("\nessas sÃ£o as informaÃ§Ã£oes do usuÃ¡rio:");
    printf("%s",conteudo);
    printf("\n\n");		
    }
@@ -125,7 +125,7 @@ int Deletar() // area de deletar usuario
    if(file == NULL)
    {
    	printf(":---------------------------------:\n");
-   	printf(":CPF NÃO EXISTE                   :\n");
+   	printf(":CPF NÃƒO EXISTE                   :\n");
    	printf(":---------------------------------:\n");
    	system("pause");
    }
@@ -135,7 +135,7 @@ int Deletar() // area de deletar usuario
 
 int main()
 {
-	int opcao=0; // Definindo variáveis
+	int opcao=0; // Definindo variÃ¡veis
 	int x=1;
 
 	char senhadigitada[10]= "a";
@@ -144,7 +144,7 @@ int main()
 	
 	
 	printf(":---------------------------------:\n"); 
-    printf(":<<<<<<  Cartório de EBAC  >>>>>> :\n");
+    printf(":<<<<<<  CartÃ³rio de EBAC  >>>>>> :\n");
     printf(":---------------------------------:\n");
     
     printf(":---------------------------------:\n"); // Inicio do menu
@@ -165,28 +165,28 @@ int main()
               setlocale(LC_ALL,"portuguese" ); // Definindo liguagem 
  
                   printf(":---------------------------------:\n"); // Inicio do menu
-                  printf(":<<<<<<  Cartório de EBAC  >>>>>> :\n");
+                  printf(":<<<<<<  CartÃ³rio de EBAC  >>>>>> :\n");
                   printf(":---------------------------------:\n");
                   printf(":                                 :\n");
-                  printf(":Escolha a opção desejada no menu :\n");
+                  printf(":Escolha a opÃ§Ã£o desejada no menu :\n");
                   printf(":---------------------------------:\n");
                   printf(": 1. Registrar nomes:             :\n");
                   printf(": 2. Consultar nomes:             :\n");
                   printf(": 3. Delatar nomes:               :\n");
                   printf(": 4. Exite:                       :\n");
                   printf(":---------------------------------:\n");
-                  printf(":ESCOLHA A OPÇÃO DESEJADA         :\n");        
+                  printf(":ESCOLHA A OPÃ‡ÃƒO DESEJADA         :\n");        
                   printf(":---------------------------------:\n");
                  scanf("%d", &opcao); // Fim do menu
    
                  system("cls");  // Armazenamento de ecolha de usuario
           
           
-                 switch(opcao)// inicio da celeçao do menu 
+                 switch(opcao)// inicio da celeÃ§ao do menu 
 		         {
                        		  
                      case 1:
-                     Registro();// chamada de funções
+                     Registro();// chamada de funÃ§Ãµes
                      break;
             
             
@@ -208,7 +208,7 @@ int main()
             
             
                      default:
-                     printf("Opção não existente  ");
+                     printf("OpÃ§Ã£o nÃ£o existente  ");
                      system("pause");
                      break;
             	

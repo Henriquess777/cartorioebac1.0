@@ -137,59 +137,96 @@ int main()
 {
 	int opcao=0; // Definindo variáveis
 	int x=1;
+
+	char senhadigitada[10]= "a";
+	int comparacao;
 	
-for(x=1;x=1;)
-{
-	  system("cls");// responsavel por limpar  a tela
 	
 	
- setlocale(LC_ALL,"portuguese" ); // Definindo liguagem 
+	printf(":---------------------------------:\n"); 
+    printf(":<<<<<<  Cartório de EBAC  >>>>>> :\n");
+    printf(":---------------------------------:\n");
+    
+    printf(":---------------------------------:\n"); // Inicio do menu
+    printf(":<< digite a senha do usuario: >> :\n");
+    printf(":---------------------------------:\n");
+    scanf("%s",senhadigitada);
+    comparacao = strcmp(senhadigitada,"henrique");
+    
+    if(comparacao == 0 )
+    {
+
+    	
+         for(x=1;x=1;)
+         {
+	     system("cls");// responsavel por limpar  a tela
+	
+	
+              setlocale(LC_ALL,"portuguese" ); // Definindo liguagem 
  
-     printf(":---------------------------------:\n"); // Inicio do menu
-     printf(":<<<<<<  Cartório de EBAC  >>>>>> :\n");
-     printf(":---------------------------------:\n");
-     printf(":                                 :\n");
-     printf(":Escolha a opção desejada no menu :\n");
-     printf(":---------------------------------:\n");
-     printf(": 1. Registrar nomes:             :\n");
-     printf(": 2. Consultar nomes:             :\n");
-     printf(": 3. Delatar nomes:               :\n");
-     printf(":---------------------------------:\n");
-     printf(":ESCOLHA A OPÇÃO DESEJADA         :\n");        
-     printf(":---------------------------------:\n");
-          scanf("%d", &opcao); // Fim do menu
+                  printf(":---------------------------------:\n"); // Inicio do menu
+                  printf(":<<<<<<  Cartório de EBAC  >>>>>> :\n");
+                  printf(":---------------------------------:\n");
+                  printf(":                                 :\n");
+                  printf(":Escolha a opção desejada no menu :\n");
+                  printf(":---------------------------------:\n");
+                  printf(": 1. Registrar nomes:             :\n");
+                  printf(": 2. Consultar nomes:             :\n");
+                  printf(": 3. Delatar nomes:               :\n");
+                  printf(": 4. Exite:                       :\n");
+                  printf(":---------------------------------:\n");
+                  printf(":ESCOLHA A OPÇÃO DESEJADA         :\n");        
+                  printf(":---------------------------------:\n");
+                 scanf("%d", &opcao); // Fim do menu
    
-          system("cls");  // Armazenamento de ecolha de usuario
+                 system("cls");  // Armazenamento de ecolha de usuario
           
           
-          switch(opcao)// inicio da celeçao do menu 
-		  {
+                 switch(opcao)// inicio da celeçao do menu 
+		         {
                        		  
-            case 1:
-            Registro();// chamada de funções
-            break;
+                     case 1:
+                     Registro();// chamada de funções
+                     break;
             
             
-            case 2:
-            Comsultar();
-            break;
+                     case 2:
+                     Comsultar();
+                     break;
             
             
-            case 3:	
-		    Deletar();
-            break;
+                     case 3:	
+		             Deletar();
+                     break;
+            
+              
+                     case 4:	
+		             printf("Obrigado por usar o sistema");
+		             return 0;
+                     break;
             
             
-            default:
-            printf("Opção não existente  ");
-            system("pause");
-            break;
+            
+                     default:
+                     printf("Opção não existente  ");
+                     system("pause");
+                     break;
             	
-        }
+                    }
    
-         
-   	        } // Fim da seleção
-}
+     }    
+   	     
+		    
 
 
+   	}
+   	
+   	else
+   	 printf("senha incorreta");
+
+	
+
+  	
+  		}
+  	
  
